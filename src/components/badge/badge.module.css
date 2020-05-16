@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.title {
+  width: 60%;
+  color: #000;
+  font-weight: 500;
+  font-size: large;
+  border-radius: 15px 0 0 15px;
+}
+
+.numbers {
+  width: 100%;
+  font-weight: 600;
+  font-size: x-large;
+  color: #ffffff;
+  border-radius: 0 15px 15px 0;
+}
+
+.title,
+.numbers {
+  padding: 1rem 2rem;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

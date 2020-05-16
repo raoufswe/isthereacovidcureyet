@@ -1,0 +1,26 @@
+.container {
+  width: min(480px, 90%);
+  height: 100%;
+  background: #353a5e;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.date {
+  font-weight: 500;
+  font-size: large;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+p {
+  font-size: large;
+  line-height: 1.5;
+}

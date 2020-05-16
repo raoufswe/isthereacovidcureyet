@@ -1,21 +1,41 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
+import { Container, Row, Col } from "react-bootstrap"
 import SEO from "../components/seo"
+import Header from "../components/header"
+import LatestUpdates from "../components/latestUpdates"
+import VaccinesProcess from "../components/vaccinesProcess"
+import Statistics from "../components/statistics"
+import Footer from "../components/footer"
+import "../styles/global.css"
 
-const IndexPage = () => (
-  <Layout>
+const App = () => (
+  <Container>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    <Row>
+      <Col>
+        <Header />
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+        <LatestUpdates />
+      </Col>
+    </Row>
+
+    <Row>
+      <Col md="6" sm="12">
+        <VaccinesProcess />
+      </Col>
+      <Col md="6" sm="12">
+        <Statistics />
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+        <Footer />
+      </Col>
+    </Row>
+  </Container>
 )
 
-export default IndexPage
+export default App
