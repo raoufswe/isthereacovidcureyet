@@ -21,7 +21,7 @@ const App = () => (
       </Col>
     </Row>
 
-    <Row>
+    <Row className="mt-md-3">
       <Col md="5" sm="12">
         <VaccinesProcess />
       </Col>

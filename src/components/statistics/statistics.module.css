@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin-right: 5vw;
 }
 
 .title {
@@ -12,12 +11,7 @@
 
 .statistics {
   display: flex;
+  width: 80%;
   flex-direction: column;
   justify-content: center;
-}
-
-@media only screen and (max-width: 991px) {
-  .sContainer {
-    margin-right: 0;
-  }
 }

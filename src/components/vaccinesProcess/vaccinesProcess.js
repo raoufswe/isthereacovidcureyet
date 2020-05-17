@@ -7,7 +7,7 @@ const VaccinesProcess = () => (
     <div className={styles.title}>How are vaccines made?</div>
     <div className={styles.container}>
       <ShareIcon className={styles.shareIcon} />
-      <ul>
+      <ul className={styles.processList}>
         <li>
           <span>Exploratory Stage</span>
         </li>

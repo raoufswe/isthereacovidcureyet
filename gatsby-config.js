@@ -6,8 +6,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `react-elastic-carousel`,
-    `react-media`,
     `react-slick`,
     {
       resolve: `gatsby-source-filesystem`,
