@@ -5,8 +5,11 @@ module.exports = {
     author: `@raoufswe`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-react-helmet`,
-    `react-slick`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `@bumped-inc/gatsby-plugin-optional-chaining`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -15,8 +18,20 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `updates`,
+        path: `${__dirname}/src/updates`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -27,6 +42,20 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`md`, `mdx`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

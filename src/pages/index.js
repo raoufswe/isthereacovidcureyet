@@ -1,40 +1,24 @@
 import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
+import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import Header from "../components/header"
-import LatestUpdates from "../components/latestUpdates"
-import VaccinesProcess from "../components/vaccinesProcess"
-import Statistics from "../components/statistics"
-import Footer from "../components/footer"
-import "../styles/global.css"
+import Header from "../components/Header"
+import LatestUpdates from "../components/LatestUpdates"
+import VaccinesProcess from "../components/VaccinesProcess"
+import Statistics from "../components/Statistics"
+import Footer from "../components/Footer"
 
 const App = () => (
-  <Container fluid>
-    <Row>
-      <Col>
-        <Header />
-      </Col>
-    </Row>
-    <Row>
-      <Col>
-        <LatestUpdates />
-      </Col>
-    </Row>
-
-    <Row className="mt-md-3">
-      <Col md="5" sm="12">
+  <>
+    <Layout>
+      <Header />
+      <LatestUpdates />
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
         <VaccinesProcess />
-      </Col>
-      <Col md="7" sm="12">
         <Statistics />
-      </Col>
-    </Row>
-    <Row>
-      <Col>
-        <Footer />
-      </Col>
-    </Row>
-  </Container>
+      </div>
+      <Footer />
+    </Layout>
+  </>
 )
 
 export default App

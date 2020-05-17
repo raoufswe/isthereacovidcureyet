@@ -1,14 +1,20 @@
 import React from "react"
-import styles from "./footer.module.css"
+import styled from "styled-components"
+
+const Styled = styled.div`
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+`
 
 const Badge = () => (
-  <div className={styles.footer}>
+  <Styled>
     Built with{" "}
     <span role="img" aria-labelledby="love">
       ❤️
     </span>
     from home during lockdown by @Maadh @Satwik @Raouf
-  </div>
+  </Styled>
 )
 
 export default Badge

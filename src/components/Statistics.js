@@ -1,9 +1,38 @@
 import React, { useEffect, useState } from "react"
-import styles from "./statistics.module.css"
-import Badge from "../badge"
+import Badge from "./Badge"
+import styled from "styled-components"
+import useHasMounted from "../hooks/useHasMounted"
+
+const Styled = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  flex-grow: 1;
+
+  .statustis-title {
+    padding: 1.5rem 0;
+    font-size: x-large;
+  }
+
+  .statistics {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 991px) {
+    .statistics {
+      width: 100%;
+    }
+  }
+`
 
 const Statistics = () => {
   const [summary, setSummary] = useState(null)
+  const hasMounted = useHasMounted()
 
   const fetchSummary = async () => {
     const response = await fetch("https://covid19.mathdro.id/api")
@@ -20,10 +49,14 @@ const Statistics = () => {
     fetchSummary()
   }, [])
 
+  if (!hasMounted) {
+    return null
+  }
+
   return (
-    <div className={styles.sContainer}>
-      <div className={styles.title}>Global COVID-19 Statistics</div>
-      <div className={styles.statistics}>
+    <Styled>
+      <div className="statustis-title">Global COVID-19 Statistics</div>
+      <div className="statistics">
         <Badge
           titleColor="#FAFF08"
           title="Active Cases"
@@ -37,7 +70,7 @@ const Statistics = () => {
           numbers={summary?.recovered?.value?.toLocaleString("en")}
         />
       </div>
-    </div>
+    </Styled>
   )
 }
 

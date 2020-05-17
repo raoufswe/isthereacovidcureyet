@@ -1,11 +1,11 @@
 import React from "react"
 import styles from "./vaccinesProcess.module.css"
-import ShareIcon from "../../assets/share"
+import ShareIcon from "../assets/share"
 
 const VaccinesProcess = () => (
-  <div>
-    <div className={styles.title}>How are vaccines made?</div>
-    <div className={styles.container}>
+  <div className={styles.processWrapper}>
+    <div className={styles.processTitle}>How are vaccines made?</div>
+    <div className={styles.cardContainer}>
       <ShareIcon className={styles.shareIcon} />
       <ul className={styles.processList}>
         <li>
