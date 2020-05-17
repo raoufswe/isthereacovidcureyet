@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/Layout.js"
+import Wrapper from "../components/Wrapper"
 import SEO from "../components/seo"
 import Header from "../components/Header"
 import LatestUpdates from "../components/LatestUpdates"
@@ -9,7 +9,7 @@ import Footer from "../components/Footer"
 
 const App = () => (
   <>
-    <Layout>
+    <Wrapper>
       <Header />
       <LatestUpdates />
       <div style={{ display: "flex", flexWrap: "wrap" }}>
@@ -17,7 +17,7 @@ const App = () => (
         <Statistics />
       </div>
       <Footer />
-    </Layout>
+    </Wrapper>
   </>
 )
 
