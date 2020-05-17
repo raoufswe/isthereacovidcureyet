@@ -7,7 +7,7 @@ import HappyIcon from "../../assets/happyIcon"
 const Header = () => (
   <div>
     <div className={styles.header}>
-      <Link to="/">isthereacovidcureyet</Link>
+      <Link to="/">isthereaCOVIDcureyet </Link>
     </div>
     <div className={styles.cureStatus}>
       <div>Is there a cure for COVID-19 yet?</div>

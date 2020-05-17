@@ -22,7 +22,7 @@ const Statistics = () => {
 
   return (
     <div className={styles.sContainer}>
-      <div className={styles.title}>COVID-19 Statistics</div>
+      <div className={styles.title}>Global COVID-19 Statistics</div>
       <div className={styles.statistics}>
         <Badge
           titleColor="#FAFF08"
