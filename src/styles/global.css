@@ -13,6 +13,11 @@ body {
   margin: 0;
 }
 
+.container-fluid {
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+}
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

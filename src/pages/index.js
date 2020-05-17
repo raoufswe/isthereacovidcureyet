@@ -9,8 +9,7 @@ import Footer from "../components/footer"
 import "../styles/global.css"
 
 const App = () => (
-  <Container>
-    <SEO title="Home" />
+  <Container fluid>
     <Row>
       <Col>
         <Header />
@@ -23,10 +22,10 @@ const App = () => (
     </Row>
 
     <Row>
-      <Col md="6" sm="12">
+      <Col md="5" sm="12">
         <VaccinesProcess />
       </Col>
-      <Col md="6" sm="12">
+      <Col md="7" sm="12">
         <Statistics />
       </Col>
     </Row>

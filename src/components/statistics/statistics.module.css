@@ -2,17 +2,22 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin-right: 5vw;
 }
 
 .title {
-  padding: 1.75rem 0;
+  padding: 1.5rem 0;
   font-size: x-large;
 }
 
 .statistics {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .sContainer {
+    margin-right: 0;
+  }
 }
