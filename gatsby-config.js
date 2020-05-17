@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `react-slick`,
+    `@bumped-inc/gatsby-plugin-optional-chaining`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
