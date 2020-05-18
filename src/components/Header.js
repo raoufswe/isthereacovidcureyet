@@ -47,7 +47,7 @@ const Styled = styled.div`
       text-align: center;
     }
     .cureStatus {
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 0;
     }
     .statusBox {
       width: 50%;

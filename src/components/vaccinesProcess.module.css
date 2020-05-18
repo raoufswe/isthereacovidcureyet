@@ -1,5 +1,6 @@
 .processWrapper {
-  flex-grow: 1;
+  margin-right: 1rem;
+  flex: 1;
 }
 
 .cardContainer {
