@@ -2,7 +2,6 @@ import "typeface-fira-sans"
 import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Theme from "../themes/theme"
-import useHasMounted from "../hooks/useHasMounted"
 
 const GlobalStyles = createGlobalStyle`
 * {
@@ -30,11 +29,6 @@ a {
 `
 
 export default function Wrapper({ children }) {
-  const hasMounted = useHasMounted()
-  if (!hasMounted) {
-    return null
-  }
-
   return (
     <React.Fragment>
       <ThemeProvider theme={Theme}>

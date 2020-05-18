@@ -9,6 +9,7 @@ import Footer from "../components/Footer"
 
 const App = () => (
   <>
+    <SEO />
     <Wrapper>
       <Header />
       <LatestUpdates />
