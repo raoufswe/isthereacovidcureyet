@@ -6,7 +6,9 @@ const VaccinesProcess = () => (
   <div className={styles.processWrapper}>
     <div className={styles.processTitle}>How are vaccines made?</div>
     <div className={styles.cardContainer}>
-      <ShareIcon className={styles.shareIcon} />
+      <a href="https://www.webmd.com/lung/covid-19-vaccine#1" target="_blank">
+        <ShareIcon className={styles.shareIcon} />
+      </a>
       <ul className={styles.processList}>
         <li>
           <span>Exploratory Stage</span>
