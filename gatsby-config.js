@@ -3,7 +3,7 @@ module.exports = {
     title: `Is there a cure for COVID yet?`,
     description: `Get latest updates on the cure of COVID-19`,
     url: "https://www.isthereacureforcovid.com",
-    image: "src/images/OG.png",
+    image: "images/OG.png",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
