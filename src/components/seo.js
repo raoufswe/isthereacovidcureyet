@@ -15,7 +15,7 @@ const SEO = ({ post }) => {
   const seo = {
     title: title,
     description: description,
-    image: `${url}${image}`,
+    image: 'https://isthereacovidcureyet.com/images/OG.png',
     url: url,
   }
   return (
