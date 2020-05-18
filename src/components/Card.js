@@ -30,6 +30,7 @@ const Styled = styled.div`
 
   @media only screen and (max-width: 991px) {
     height: 100%;
+    min-height: 280px;
   }
 `
 
@@ -37,14 +38,12 @@ const Card = ({ date, content, articalLink }) => (
   <Styled>
     <div className="header">
       <div className="date">{date}</div>
-      {articalLink && (
-        <a href={articalLink} target="_blank" rel="noopener noreferrer">
-          <ShareIcon />
-        </a>
-      )}
+      <a href={articalLink} target="_blank" rel="noopener noreferrer">
+        <ShareIcon />
+      </a>
     </div>
 
-    <p>{content}</p>
+    <p dangerouslySetInnerHTML={{ __html: content }}></p>
   </Styled>
 )
 

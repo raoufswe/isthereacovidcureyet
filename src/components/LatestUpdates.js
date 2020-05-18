@@ -2,33 +2,7 @@ import React from "react"
 import Card from "./Card"
 import Slider from "react-slick"
 import styled from "styled-components"
-
-const fakeData = [
-  {
-    date: "2020-10-10",
-    articalLink: "https://www.github.com",
-    content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  },
-  {
-    date: "2020-10-10",
-    articalLink: "https://www.github.com",
-    content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  },
-  {
-    date: "2020-10-10",
-    articalLink: "https://www.github.com",
-    content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  },
-  {
-    date: "2020-10-10",
-    articalLink: "https://www.github.com",
-    content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  },
-]
+import { StaticQuery, graphql } from "gatsby"
 
 const Styled = styled.div`
   margin-top: 1rem;
@@ -298,13 +272,41 @@ const LatestUpdates = () => {
     <Styled>
       <div className="last-updates-title">Latest updates on the cure</div>
       <div>
-        <Slider {...settings}>
-          {fakeData.map(({ date, content, articalLink }, key) => (
-            <div style={{ padding: 100 }} key={key}>
-              <Card date={date} content={content} articalLink={articalLink} />
-            </div>
-          ))}
-        </Slider>
+        <StaticQuery
+          query={graphql`
+            query MyQuery {
+              __typename
+              allMarkdownRemark(
+                sort: { order: ASC, fields: frontmatter___date }
+              ) {
+                edges {
+                  node {
+                    frontmatter {
+                      date(formatString: "MMMM DD, YYYY")
+                      path
+                      title
+                    }
+                    html
+                  }
+                }
+              }
+            }
+          `}
+          render={data => {
+            return (
+              <Slider {...settings}>
+                {data.allMarkdownRemark.edges.map((edge, key) => (
+                  <Card
+                    date={edge.node.frontmatter.date}
+                    content={edge.node.html}
+                    articalLink={edge.node.frontmatter.path}
+                    key={key}
+                  />
+                ))}
+              </Slider>
+            )
+          }}
+        />
       </div>
     </Styled>
   )
