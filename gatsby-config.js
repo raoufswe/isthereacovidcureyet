@@ -4,7 +4,7 @@ module.exports = {
     description: `Get latest updates on the cure of COVID-19`,
     author: `@Maadh, @Raouf, @Satwik`,
     url: "https://www.isthereacureforcovid.com",
-    image: "/images/OG.png",
+    image: "src/images/OG.png",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -44,7 +44,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#2b2e44`,
         theme_color: `#2b2e44`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
