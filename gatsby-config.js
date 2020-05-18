@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `isthereacovidcureyet`,
-    description: `get latest updates on the cure of COVID-19`,
-    author: `@raoufswe`,
+    title: `Is there a cure for COVID yet?`,
+    description: `Get latest updates on the cure of COVID-19`,
+    author: `@Maadh, @Raouf, @Satwik`,
+    url: "https://www.isthereacureforcovid.com",
+    image: "/images/OG.png",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
