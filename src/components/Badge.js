@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Styled = styled.div`
   display: flex;
-  margin-bottom: 1rem;
+  height: 100%;
 
   .badge-title {
     width: 60%;

@@ -19,6 +19,10 @@ const Styled = styled.div`
     height: 100%;
     flex-direction: column;
     justify-content: center;
+
+    div:first-of-type {
+      margin-bottom: 1rem;
+    }
   }
 
   @media only screen and (max-width: 991px) {
