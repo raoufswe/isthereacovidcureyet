@@ -42,7 +42,6 @@ const Card = ({ date, content, articalLink }) => (
         <ShareIcon />
       </a>
     </div>
-
     <p dangerouslySetInnerHTML={{ __html: content }}></p>
   </Styled>
 )
