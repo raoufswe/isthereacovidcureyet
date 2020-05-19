@@ -50,7 +50,14 @@
   margin-left: 0.5rem;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1150px) {
+  .cardContainer {
+    width: 100%;
+  }
+  .processList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
   .processWrapper {
     margin-right: 0;
   }

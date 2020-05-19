@@ -2,6 +2,7 @@ import "typeface-fira-sans"
 import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Theme from "../themes/theme"
+import "./wrapper.css"
 
 const GlobalStyles = createGlobalStyle`
 * {
@@ -13,7 +14,6 @@ const GlobalStyles = createGlobalStyle`
 html,
 body {
   background-color: ${props => props.theme.background};
-  font-family: 'Fira Sans';
   color: #fff;
   height: 100%;
 
@@ -26,6 +26,23 @@ a {
   color: #fff;
   text-decoration: none;
 }
+
+.statistics-section {
+  display:flex;
+  .userLocationSummary {
+  margin-left: 1rem
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .statistics-section {
+flex-direction: column;
+.userLocationSummary {
+  margin-left: 0
+  }
+  }
+}
+
 `
 
 export default function Wrapper({ children }) {

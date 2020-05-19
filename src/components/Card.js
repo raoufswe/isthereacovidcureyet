@@ -3,7 +3,7 @@ import ShareIcon from "../assets/share"
 import styled from "styled-components"
 
 const Styled = styled.div`
-  width: min(480px, 90%);
+  width: min(410px, 100%);
   height: 100%;
   min-height: 280px;
   background: #353a5e;

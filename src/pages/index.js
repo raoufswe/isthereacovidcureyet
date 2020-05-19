@@ -13,7 +13,7 @@ const App = () => (
     <Wrapper>
       <Header />
       <LatestUpdates />
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <div className="statistics-section">
         <VaccinesProcess />
         <Statistics />
       </div>

@@ -14,13 +14,13 @@ const Styled = styled.div`
   }
 
   .statistics {
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: center;
 
-    div:first-of-type {
+    > div :first-of-type {
       margin-bottom: 1rem;
     }
   }
@@ -68,7 +68,6 @@ const Statistics = () => {
     fetchUserCountry()
   }, [])
 
-  console.log(userLocationSummary)
   if (!hasMounted || !globalSummary || !userLocationSummary) return null
 
   return (
@@ -76,42 +75,48 @@ const Statistics = () => {
       <Styled>
         <div className="statustis-title">Global COVID-19 Statistics</div>
         <div className="statistics">
-          <Badge
-            titleColor="#FAFF08"
-            title="Active Cases"
-            numbersColor="#CCD00D"
-            numbers={globalSummary?.confirmed?.value?.toLocaleString("en")}
-          />
-          <Badge
-            titleColor="#08FF3F"
-            title="Recovered Cases"
-            numbersColor="#1CD00D"
-            numbers={globalSummary?.recovered?.value?.toLocaleString("en")}
-          />
+          {hasMounted && globalSummary ? (
+            <>
+              <Badge
+                titleColor="#FAFF08"
+                title="Active Cases"
+                numbersColor="#CCD00D"
+                numbers={globalSummary?.confirmed?.value?.toLocaleString("en")}
+              />
+              <Badge
+                titleColor="#08FF3F"
+                title="Recovered Cases"
+                numbersColor="#1CD00D"
+                numbers={globalSummary?.recovered?.value?.toLocaleString("en")}
+              />
+            </>
+          ) : null}
         </div>
       </Styled>
 
-      <Styled>
-        <div className="statustis-title">{`${userLocationSummary?.country}'s COVID-19 Statistics `}</div>
-        <div className="statistics">
-          <Badge
-            titleColor="#FAFF08"
-            title="Active Cases"
-            numbersColor="#CCD00D"
-            numbers={userLocationSummary?.confirmed?.value?.toLocaleString(
-              "en"
-            )}
-          />
-          <Badge
-            titleColor="#08FF3F"
-            title="Recovered Cases"
-            numbersColor="#1CD00D"
-            numbers={userLocationSummary?.recovered?.value?.toLocaleString(
-              "en"
-            )}
-          />
-        </div>
-      </Styled>
+      {hasMounted && userLocationSummary ? (
+        <Styled className="userLocationSummary">
+          <div className="statustis-title">{`${userLocationSummary?.country}'s COVID-19 Statistics `}</div>
+          <div className="statistics">
+            <Badge
+              titleColor="#FAFF08"
+              title="Active Cases"
+              numbersColor="#CCD00D"
+              numbers={userLocationSummary?.confirmed?.value?.toLocaleString(
+                "en"
+              )}
+            />
+            <Badge
+              titleColor="#08FF3F"
+              title="Recovered Cases"
+              numbersColor="#1CD00D"
+              numbers={userLocationSummary?.recovered?.value?.toLocaleString(
+                "en"
+              )}
+            />
+          </div>
+        </Styled>
+      ) : null}
     </>
   )
 }
