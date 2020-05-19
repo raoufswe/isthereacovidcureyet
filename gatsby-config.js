@@ -16,6 +16,12 @@ module.exports = {
     `gatsby-transformer-remark`,
     `@bumped-inc/gatsby-plugin-optional-chaining`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-154471496-1",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
