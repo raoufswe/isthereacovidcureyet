@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     url: "https://www.isthereacureforcovid.com",
-    image: "/images/OG.png",
+    image: "/images/isthereacure.png",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
