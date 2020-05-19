@@ -3,7 +3,7 @@ module.exports = {
     title: `Is there a cure for COVID yet?`,
     description: `Get latest updates on the cure of COVID-19`,
     author: `@Maadh, @Raouf, @Satwik`,
-    url: "https://www.isthereacureforcovid.com",
+    url: "https://www.isthereacovidcureyet.com",
     image: "/images/isthereacure.png",
   },
   plugins: [
