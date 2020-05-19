@@ -4,7 +4,8 @@ import styled from "styled-components"
 
 const Styled = styled.div`
   width: min(480px, 90%);
-  height: 260px;
+  height: 100%;
+  min-height: 280px;
   background: #353a5e;
   box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
@@ -26,11 +27,6 @@ const Styled = styled.div`
   p {
     font-size: large;
     line-height: 1.5;
-  }
-
-  @media only screen and (max-width: 991px) {
-    height: 100%;
-    min-height: 280px;
   }
 `
 
