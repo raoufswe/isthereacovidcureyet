@@ -69,7 +69,7 @@ const LatestUpdates = () => {
             return (
               <Swiper {...params}>
                 {data.allMarkdownRemark.edges.map((edge, key) => (
-                  <div>
+                  <div key={key}>
                     <Card
                       date={edge.node.frontmatter.date}
                       content={edge.node.html}

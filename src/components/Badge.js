@@ -4,6 +4,7 @@ import styled from "styled-components"
 const Styled = styled.div`
   display: flex;
   height: 100%;
+  /* min-height: 76px; */
 
   .badge-title {
     width: 60%;
@@ -11,6 +12,7 @@ const Styled = styled.div`
     font-weight: 500;
     font-size: large;
     border-radius: 15px 0 0 15px;
+    height: 76px;
   }
 
   .badge-numbers {
@@ -24,6 +26,7 @@ const Styled = styled.div`
   .badge-title,
   .badge-numbers {
     padding: 1rem 2rem;
+    width: 100%;
     min-height: 100%;
     display: flex;
     justify-content: center;
