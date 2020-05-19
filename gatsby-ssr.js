@@ -1,17 +1,26 @@
-var React = require("react");
+const _ = require("lodash");
 
-// Hack, to reorder the helmet components as first in <head> tag
+// cleanup html before render
 exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
-  /**
-   * @type {any[]} headComponents
-   */
   const headComponents = getHeadComponents();
-
-  headComponents.sort((a, b) => {
-    if (a.props && a.props["data-react-helmet"]) {
-      return 0;
-    }
-    return 1;
-  });
-  replaceHeadComponents(headComponents);
+  replaceHeadComponents(omitDeep(headComponents, ["data-react-helmet"]));
 };
+
+/**
+ * remove properties from collection deep
+ * @param collection
+ * @param excludeKeys
+ * @returns {any}
+ */
+const omitDeep = (collection, excludeKeys) =>
+  _.cloneDeepWith(collection, value => {
+    if (value && typeof value === "object") {
+      for (const key of excludeKeys) {
+        try {
+          delete value[key];
+        } catch (_) {
+          // console.log("ignore", _);
+        }
+      }
+    }
+  });

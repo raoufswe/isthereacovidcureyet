@@ -1,6 +1,5 @@
 import React from "react"
 import Wrapper from "../components/Wrapper"
-import SEO from "../components/seo"
 import Header from "../components/Header"
 import LatestUpdates from "../components/LatestUpdates"
 import VaccinesProcess from "../components/VaccinesProcess"
@@ -9,7 +8,6 @@ import Footer from "../components/Footer"
 
 const App = () => (
   <>
-    <SEO />
     <Wrapper>
       <Header />
       <LatestUpdates />
