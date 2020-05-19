@@ -13,7 +13,10 @@ const Badge = () => (
     <span role="img" aria-labelledby="love">
       ❤️
     </span>
-    from home during lockdown by @Maadh @Satwik @Raouf
+    <span> </span>from home during lockdown by
+    <a href="https://www.twitter.com/itsMaadh" target="_blank"> @Maadh</a>
+    <a href="https://www.linkedin.com/in/satwik-gawand/" target="_blank">, @Satwik </a>
+    <a href="https://www.github.com/raoufswe" target="_blank">& @Raouf </a>
   </Styled>
 )
 

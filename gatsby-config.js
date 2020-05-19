@@ -45,13 +45,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `isthereacovidcureyet`,
-        short_name: `isthereacovidcureyet`,
+        name: `Is there a COVID cure yet`,
+        short_name: `isthereaCOVIDcure yet`,
         start_url: `/`,
         background_color: `#2b2e44`,
         theme_color: `#2b2e44`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/circular_icon.png`, // This path is relative to the root of the site.
       },
     },
     {
