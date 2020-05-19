@@ -45,8 +45,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Is there a COVID cure yet`,
-        short_name: `isthereaCOVIDcure yet`,
+        name: `isthereaCOVIDcureyet`,
+        short_name: `isthereaCOVIDcureyet`,
         start_url: `/`,
         background_color: `#2b2e44`,
         theme_color: `#2b2e44`,
