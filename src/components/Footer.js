@@ -14,9 +14,20 @@ const Badge = () => (
       ❤️
     </span>
     <span> </span>from home during lockdown by
-    <a href="https://www.twitter.com/itsMaadh" target="_blank"> @Maadh</a>
-    <a href="https://www.linkedin.com/in/satwik-gawand/" target="_blank">, @Satwik </a>
-    <a href="https://www.github.com/raoufswe" target="_blank">& @Raouf </a>
+    <a href="https://www.twitter.com/itsMaadh" target="_blank" rel="noreferrer">
+      {" "}
+      @Maadh
+    </a>
+    <a
+      href="https://www.linkedin.com/in/satwik-gawand/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      , @Satwik{" "}
+    </a>
+    <a href="https://www.github.com/raoufswe" target="_blank" rel="noreferrer">
+      & @Raouf{" "}
+    </a>
   </Styled>
 )
 

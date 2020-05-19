@@ -34,7 +34,7 @@ const Card = ({ date, content, articalLink }) => (
   <Styled>
     <div className="header">
       <div className="date">{date}</div>
-      <a href={articalLink} target="_blank" rel="noopener noreferrer">
+      <a href={articalLink} target="_blank" rel="noreferrer">
         <ShareIcon />
       </a>
     </div>
