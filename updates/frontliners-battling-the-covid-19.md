@@ -1,6 +1,6 @@
 ---
-path: https://www.thestar.com.my/news/nation/2020/05/18/covid-19-frontliners-given-standing-ovation-by-parliament
-date: 2020-05-18T09:42:09.486Z
-title: frontliners battling the Covid-19
+path: https://www.nytimes.com/2020/05/04/business/coronavirus-china-vaccine.html
+date: 2020-05-20T19:21:33.427Z
+title: Sinopharm
 ---
-PETALING JAYA: The frontliners battling the Covid-19 pandemic outbreak were given a round of applause by lawmakers in the Dewan Rakyat as an appreciation of their effort.
+Sinopharm is currently at phase I/II trials. Although, this company does not seem to have a lot of credibility for their products especially in China where they already had court cases about their products not being reliable.
