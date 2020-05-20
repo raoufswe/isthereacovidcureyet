@@ -1,6 +1,6 @@
 ---
-path: https://www.theedgemarkets.com/article/malaysia-may-be-location-covid19-vaccine-trials-%E2%80%94-health-dg
-date: 2020-05-18T09:50:34.945Z
-title: Malaysia may be location for Covid-19 vaccine trials — Health DG
+path: https://thehill.com/homenews/news/498712-moderna-ceo-says-coronavirus-vaccine-could-be-ready-by-end-of-year
+date: 2020-05-20T19:20:14.411Z
+title: Moderna
 ---
-KUALA LUMPUR (May 2): Malaysia may be the next location in testing the Covid-19 vaccine for the third phase, said health director-general (DG) Datuk Dr Noor Hisham Abdullah.
+Moderna vaccine showed a similar immune response to recovered patients, and could be ready to be sent to the FDA by the end of this year.
