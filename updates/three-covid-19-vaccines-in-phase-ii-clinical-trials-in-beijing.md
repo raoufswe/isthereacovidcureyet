@@ -1,6 +1,10 @@
 ---
-path: https://news.cgtn.com/news/2020-05-18/Three-COVID-19-vaccines-in-phase-II-clinical-trials-in-Beijing-QAiPEY6eXK/index.html
+path: https://medcitynews.com/2020/05/cansino-biologics-may-start-clinical-development-of-covid-19-vaccine-in-canada/?rf=1
 date: 2020-05-18T09:48:20.144Z
-title: Three COVID-19 vaccines in phase II clinical trials in Beijing
+title: CanSino Biological
 ---
-Three COVID-19 vaccines have entered phase II clinical trials in Beijing, a municipal health official said on Sunday.
+<!--StartFragment-->
+
+**CanSino Biological** is currently at the phase II of the clinical evaluation and is currently testing on 500 patients. They are estimating to start phase III as early as summer and is considered the most promising.
+
+<!--EndFragment-->
