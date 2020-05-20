@@ -1,12 +1,6 @@
 ---
-path: https://www.netflix.com
-date: 2020-05-20T18:26:57.809Z
-title: CanSino Biological Inc. / Beijing Institute
+path: https://www.pharmaceutical-technology.com/news/oxford-university-covid-19-vaccine-monkey-data/
+date: 2020-05-20T19:23:00.674Z
+title: University of Oxford
 ---
-<!--StartFragment-->
-
-CanSino Biological Inc. / Beijing Institute
-
-They are doing a lot of shit
-
-<!--EndFragment-->
+University of Oxford is currently in human trails in phase I/II and a virus candidate has reported to have prevented damage to the lungs. However, the virus was actively replicating in the nose.
