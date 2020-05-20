@@ -1,6 +1,6 @@
 ---
 path: https://medcitynews.com/2020/05/cansino-biologics-may-start-clinical-development-of-covid-19-vaccine-in-canada/?rf=1
-date: 2020-05-18T09:48:20.144Z
+date: 2020-05-20T19:19:39.964Z
 title: CanSino Biological
 ---
 <!--StartFragment-->
