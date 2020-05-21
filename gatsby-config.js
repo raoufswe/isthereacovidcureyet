@@ -7,8 +7,9 @@ module.exports = {
     image: "/images/isthereacure.png",
   },
   plugins: [
+    `gatsby-plugin-preact`,
+    `gatsby-plugin-webpack-bundle-analyzer`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,

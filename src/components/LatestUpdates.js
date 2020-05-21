@@ -1,4 +1,5 @@
-import Swiper from "react-id-swiper"
+import { Swiper, Pagination } from "swiper/js/swiper.esm"
+import ReactIdSwiperCustom from "react-id-swiper/lib/ReactIdSwiper.custom"
 import React from "react"
 import Card from "./Card"
 import styled from "styled-components"
@@ -14,6 +15,8 @@ const Styled = styled.div`
 
 const LatestUpdates = () => {
   const params = {
+    Swiper,
+    modules: [Pagination],
     slidesPerView: 4,
     spaceBetween: 30,
     pagination: {
@@ -67,7 +70,7 @@ const LatestUpdates = () => {
           `}
           render={data => {
             return (
-              <Swiper {...params}>
+              <ReactIdSwiperCustom {...params}>
                 {data.allMarkdownRemark.edges.map((edge, key) => (
                   <div key={key}>
                     <Card
@@ -78,7 +81,7 @@ const LatestUpdates = () => {
                     />
                   </div>
                 ))}
-              </Swiper>
+              </ReactIdSwiperCustom>
             )
           }}
         />
