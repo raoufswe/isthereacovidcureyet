@@ -11,6 +11,10 @@ const Styled = styled.div`
     padding: 1.5rem 0;
     font-size: x-large;
   }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+    background: white;
+  }
 `
 
 const LatestUpdates = () => {
