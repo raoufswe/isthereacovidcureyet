@@ -2,7 +2,7 @@ import * as React from "react"
 
 function SvgComponent(props) {
   return (
-    <svg height="3rem" viewBox="0 0 512 512" fill="none" {...props}>
+    <svg height="2.5rem" viewBox="0 0 512 512" fill="none" {...props}>
       <circle cx={256} cy={256} r={256} fill="#ffd93b" />
       <path
         d="M512 256c0 141.44-114.64 256-256 256-80.48 0-152.32-37.12-199.28-95.28 43.92 35.52 99.84 56.72 160.72 56.72 141.36 0 256-114.56 256-256 0-60.88-21.2-116.8-56.72-160.72C474.8 103.68 512 175.52 512 256z"
