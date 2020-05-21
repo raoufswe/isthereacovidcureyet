@@ -14,7 +14,6 @@ const Styled = styled.div`
   }
 
   .statistics {
-    /* margin-right: 1rem; */
     display: flex;
     height: 100%;
     flex-direction: column;

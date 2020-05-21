@@ -23,3 +23,4 @@ const App = () => (
 )
 
 export default App
+console.error("Built by Bineabble-Labs")
