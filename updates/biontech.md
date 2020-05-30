@@ -1,6 +1,6 @@
 ---
-path: https://www.biopharmadive.com/news/coronavirus-vaccine-mrna-biontech-pfizer-moderna/574202/
-date: 2020-05-20T19:23:12.544Z
+path: https://nenow.in/health/covid-19-vaccine-could-be-ready-by-october-pfizer.html
+date: 2020-05-30T17:32:01.344Z
 title: BioNTech
 ---
-**BioNTech**, a German company, partners with Chinese Giant Fosun Pharma to develop a vaccine. They are currently recruiting for Phase I/II trials.
+**BioNTech** CEO Albert Boulra said the vaccine might be ready by end of October if they have enough evidence of safety and efficacy to make the FDA and EMA comfortable.
