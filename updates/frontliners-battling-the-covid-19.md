@@ -1,6 +1,6 @@
 ---
-path: https://www.nytimes.com/2020/05/04/business/coronavirus-china-vaccine.html
-date: 2020-05-20T19:21:33.427Z
+path: https://www.deccanherald.com/science-and-environment/chinese-coronavirus-vaccine-could-be-ready-by-year-end-government-body-says-843631.html
+date: 2020-05-30T17:27:43.384Z
 title: Sinopharm
 ---
-**Sinopharm** is currently at phase I/II trials. Although, this company does not seem to have a lot of credibility for their products especially in China where they already had court cases about their products not being reliable.
+The **SinoPharm** vaccine will be ready for the market by the end of 2020, or early 2021 according to a social media post by China’s State-owned Assets Supervision and Administration Commission (SASAC).
