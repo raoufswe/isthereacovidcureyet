@@ -1,10 +1,6 @@
 ---
-path: https://medcitynews.com/2020/05/cansino-biologics-may-start-clinical-development-of-covid-19-vaccine-in-canada/?rf=1
-date: 2020-05-20T19:19:39.964Z
+path: https://indianexpress.com/article/coronavirus/covid-19-vaccine-latest-updates-6425121/
+date: 2020-05-30T17:24:09.625Z
 title: CanSino Biological
 ---
-<!--StartFragment-->
-
-**CanSino Biological** is currently at the phase II of the clinical evaluation and is currently testing on 500 patients. They are estimating to start phase III as early as summer and is considered the most promising.
-
-<!--EndFragment-->
+**CanSino Biological Inc.** claims success in human trials and may start clinical development of COVID-19 vaccine in Canada.
